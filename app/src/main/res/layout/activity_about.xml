@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adriana_chionetti_rhkgssfniji_unsplash"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="134dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/campusbyte" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/menu"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <TextView
+            android:id="@+id/AppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="130dp"
+            android:text="Campus Bytes"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="Mobile Developer | District six "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/rounded_button"
+            android:ems="10"
+            android:hint=" Search"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#B3FFFFFF"
+            android:drawableRight="@drawable/search"
+
+            />
+    </RelativeLayout>
+
+</ScrollView>
