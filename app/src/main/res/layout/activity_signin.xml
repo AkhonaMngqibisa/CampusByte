@@ -23,7 +23,7 @@
             app:srcCompat="@drawable/campusbyte" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/EmailAddress"
             android:layout_width="251dp"
             android:layout_height="39dp"
             android:layout_marginLeft="90dp"
@@ -37,7 +37,7 @@
             />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/Password"
             android:layout_width="248dp"
             android:layout_height="38dp"
             android:layout_marginLeft="90dp"

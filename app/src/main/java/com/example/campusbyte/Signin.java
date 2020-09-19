@@ -7,18 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Signin extends AppCompatActivity
 {
     private Button SignIn;
-    private TextView forgotPassword;
+    private TextView forgotPassword, EmailAddress, Password;
     private TextView signup;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-
+        EmailAddress = (TextView) findViewById(R.id.EmailAddress) ;
+        Password = (TextView) findViewById(R.id.Password) ;
 
         SignIn = (Button)findViewById(R.id.SignIn);
         SignIn.setOnClickListener(new View.OnClickListener()
@@ -26,7 +28,18 @@ public class Signin extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                openHome();
+                if(EmailAddress.getText().toString().equals("admin")&& Password.getText().toString().equals("admin"))
+                {
+                 openAdminAbout();
+                }
+                else if(EmailAddress.getText().toString().equals("user")&& Password.getText().toString().equals("user"))
+                {
+                    openHome();
+                }
+               else
+                    {
+                        Toast.makeText(getApplicationContext(),"Not registered create an account",Toast.LENGTH_LONG).show();
+                    }
             }
         });
 
@@ -51,12 +64,21 @@ public class Signin extends AppCompatActivity
         });
     }
 
-    //-------------Home Page
+    //-------------Home Page for user
     public void openHome()
     {
         Intent intent = new Intent(this, Home.class);
         startActivity(intent);
     }
+    //-------------Home Page for admin
+   public void openAdminAbout()
+    {
+        Intent intent = new Intent(this,AdminAbout.class);
+        startActivity(intent);
+    }
+
+
+
 
     //--------------Forgot Password PAge
     public void openForgotPassword()
