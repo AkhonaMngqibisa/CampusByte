@@ -10,5 +10,26 @@
 
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="campus_bytes1">Campus Bytes</string>
+    <string name="mobile_developer_district_six1">Mobile Developer | District six</string>
+    <string name="search1">Search</string>
+    <string name="logooftheapp">logooftheapp</string>
+    <string name="campus_bytes">Campus Bytes</string>
+    <string name="mobile_developer_district_six">Mobile Developer | District six</string>
+    <string name="email_address1">Email Address</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="not_a_member_yet_sign_up">Not a member yet? Sign Up</string>
+    <string name="send_link">Send Link</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_your_email_address_and_we_ll_send_you_a_link_to_reset_your_password">Enter your email address and we\'ll send you a link to reset your password</string>
+    <string name="our_aim_is_to_create_a_more_efficient_way_for_users_to_grab_meals_between_lectures_and_meetings_it_eliminates_the_process_of_going_to_the_cafeteria_and_waiting_in_a_queue_when_you_are_in_a_rush_this_also_ties_in_well_with_the_current_global_pandemic_as_some_students_returning_to_residence_may_want_to_order_meals_in_a_safer_way">Our aim is to create a more efficient way for users to grab meals between lectures and meetings. It eliminates the process of going to the cafeteria and waiting in a queue when you are in a rush. This also ties in well with the current global pandemic, as some students returning to residence may want to order meals in a safer way</string>
+    <string name="the_purpose_of_the_application_is_to_improve_productivity_and_efficiency_of_university_goers_they_will_not_waste_time_leaving_a_lecture_or_study_session_to_go_and_buy_a_meal_this_app_will_make_it_possible_for_users_to_order_their_meals_when_they_are_unable_to_physically_go_to_the_cafeteria">The purpose of the application is to improve productivity and efficiency of university-goers, they will not waste time leaving a lecture or study session to go and buy a meal. This app will make it possible for users to order their meals when they are unable to physically go to the cafeteria.</string>
+    <string name="aim">AIM</string>
+    <string name="campus_byte_is_an_application_used_by_university_or_college_campuses_where_students_will_be_able_to_order_their_meals_online">Campus Byte is an application used by university or college campuses, where students will be able to order their meals online.</string>
+    <string name="about">ABOUT</string>
+    <string name="search">Search</string>
 
 </resources>

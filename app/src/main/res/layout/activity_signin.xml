@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/han"
         android:orientation="vertical"
 
@@ -18,8 +18,10 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
             android:layout_marginLeft="145dp"
             android:layout_marginTop="90dp"
+            android:contentDescription="@string/logooftheapp"
             app:srcCompat="@drawable/campusbyte" />
 
         <EditText
@@ -30,11 +32,12 @@
             android:layout_marginTop="300dp"
             android:background="@drawable/rounded_button"
             android:ems="10"
-            android:hint=" Email Address"
+            android:hint="@string/email_address"
             android:inputType="textEmailAddress"
             android:textColorHint="#B3FFFFFF"
 
-            />
+            android:autofillHints=""
+            android:layout_marginStart="90dp" />
 
         <EditText
             android:id="@+id/Password"
@@ -46,7 +49,9 @@
             android:ems="10"
             android:hint=" Password"
             android:inputType="textPassword"
-            android:textColorHint="#B3FFFFFF" />
+            android:textColorHint="#B3FFFFFF"
+            android:autofillHints=""
+            android:layout_marginStart="90dp" />
 
         <TextView
             android:id="@+id/forgotPassword"
@@ -57,7 +62,8 @@
             android:background="#00FFFFFF"
             android:text="Forgot Password"
             android:textColor="#FFFFFF"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginStart="219dp" />
 
         <Button
             android:id="@+id/SignIn"
@@ -68,7 +74,8 @@
             android:background="@drawable/rounded1_button"
             android:text="Sign In"
             android:textColor="#FFFFFF"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:layout_marginStart="90dp" />
 
         <TextView
             android:id="@+id/signup"
@@ -83,6 +90,8 @@
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:gravity="center_horizontal" />
+            android:gravity="center_horizontal"
+            android:layout_marginStart="90dp"
+            android:paddingStart="20dp" />
     </RelativeLayout>
 </ScrollView>

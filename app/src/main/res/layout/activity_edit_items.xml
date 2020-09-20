@@ -12,14 +12,14 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:paddingLeft="100dp"
                 android:fontFamily="sans-serif"
                 android:text="Categories"
                 android:textColor="@color/white"
@@ -27,31 +27,30 @@
                 android:textSize="30sp" />
 
             <GridLayout
-                android:layout_width="325dp"
+                android:layout_width="340dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="5dp"
+                android:layout_margin="1dp"
                 android:alignmentMode="alignMargins"
                 android:columnCount="2"
                 android:rowCount="5">
 
-
                 <androidx.cardview.widget.CardView
-                    android:layout_width="134dp"
-                    android:layout_height="170dp"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/gray"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="5dp">
+                    app:cardBackgroundColor="@color/darkGreen"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="143dp"
+                        android:layout_height="180dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="84dp"
+                            android:layout_width="100dp"
                             android:layout_height="84dp"
                             android:src="@drawable/pies_meals" />
 
@@ -59,32 +58,39 @@
                             android:id="@+id/coldfood"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Cold food"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/add" />
+
+
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="134dp"
-                    android:layout_height="170dp"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/gray"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="5dp">
+                    app:cardBackgroundColor="@color/darkGreen"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
 
                     <LinearLayout
-                        android:layout_width="142dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="84dp"
+                            android:layout_width="100dp"
                             android:layout_height="84dp"
                             android:src="@drawable/snack_bars" />
 
@@ -92,32 +98,36 @@
                             android:id="@+id/snacks"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Snacks "
                             android:textColor="@color/white"
                             android:textSize="20sp" />
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/add" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="134dp"
-                    android:layout_height="170dp"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/gray"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="5dp">
+                    app:cardBackgroundColor="@color/darkGreen"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
 
                     <LinearLayout
-                        android:layout_width="145dp"
-                        android:layout_height="177dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="110dp"
+                            android:layout_width="100dp"
                             android:layout_height="84dp"
                             android:src="@drawable/pizza" />
 
@@ -125,32 +135,37 @@
                             android:id="@+id/warmfood"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="5dp"
                             android:fontFamily="sans-serif"
                             android:text="Warm food"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/add" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="134dp"
-                    android:layout_height="170dp"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/gray"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="5dp">
+                    app:cardBackgroundColor="@color/darkGreen"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
 
                     <LinearLayout
-                        android:layout_width="132dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="84dp"
+                            android:layout_width="100dp"
                             android:layout_height="80dp"
                             android:src="@drawable/tea" />
 
@@ -158,32 +173,37 @@
                             android:id="@+id/warmbeverage"
                             android:layout_width="110dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Warm beverages"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/add" />
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="145dp"
-                    android:layout_height="170dp"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="@color/gray"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="5dp">
+                    app:cardBackgroundColor="@color/darkGreen"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="15dp">
 
                     <LinearLayout
-                        android:layout_width="147dp"
+                        android:layout_width="match_parent"
                         android:layout_height="180dp"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="84dp"
+                            android:layout_width="100dp"
                             android:layout_height="84dp"
                             android:src="@drawable/coke" />
 
@@ -191,11 +211,15 @@
                             android:id="@+id/coldbeverage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif"
                             android:text="Cold beverages"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/add" />
 
                     </LinearLayout>
 
