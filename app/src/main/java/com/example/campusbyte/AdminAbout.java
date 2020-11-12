@@ -53,11 +53,11 @@ public class AdminAbout extends AppCompatActivity
                 }
                 else if(id==R.id.item4)
                 {
-
+                    completedOrders();
                 }
                 else if(id==R.id.item5)
                 {
-
+                    openHistoryOrders();
                 }
                 else if(id==R.id.item6)
                 {
@@ -97,6 +97,18 @@ public class AdminAbout extends AppCompatActivity
     public void openPendingOrders()
     {
         Intent intent = new Intent(this, PendingOrders.class);
+        startActivity(intent);
+    }
+    //-------------History Orders
+    public void openHistoryOrders()
+    {
+        Intent intent = new Intent(this, OrderHistory.class);
+        startActivity(intent);
+    }
+    //-------------Completed Orders
+    public void completedOrders()
+    {
+        Intent intent = new Intent(this, CompletedOrders.class);
         startActivity(intent);
     }
     //------------Logout

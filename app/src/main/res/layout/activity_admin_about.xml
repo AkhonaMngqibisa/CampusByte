@@ -5,37 +5,37 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AdminAbout"
+
    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/adriana_chionetti_rhkgssfniji_unsplash"
+        android:background="@drawable/background"
     >
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="180dp"
-            android:layout_height="134dp"
-            android:layout_marginStart="125dp"
-            android:layout_marginLeft="125dp"
-            android:layout_marginTop="50dp"
-            android:contentDescription="@string/logooftheapp"
-            app:srcCompat="@drawable/campusbyte" />
     </LinearLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/NavigationView"
-        app:headerLayout="@layout/header"
-        android:layout_height="match_parent"
-        android:layout_width="wrap_content"
-        android:background="@color/white"
-        app:itemTextColor="@color/gray"
-        app:itemIconTint="@color/gray"
-        app:menu="@menu/menu"
-        android:layout_gravity="start">
 
-</com.google.android.material.navigation.NavigationView>
 
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="180dp"
+                android:layout_height="134dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="@string/logooftheapp"
+                app:srcCompat="@drawable/campusbyte" />
     <TextView
         android:id="@+id/AppName"
         android:layout_width="wrap_content"
@@ -65,22 +65,34 @@
 
     <EditText
         android:id="@+id/search"
-        android:layout_width="280dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="300dp"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="390dp"
         android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/search"
         android:ems="10"
         android:hint="@string/search"
         android:inputType="textEmailAddress"
-        android:textColorHint="#B3FFFFFF"
-        android:drawableRight="@drawable/search"
+        android:textColorHint="#B3FFFFFF" />
 
-        android:autofillHints=""
-        android:drawableEnd="@drawable/search" />
 
+    </RelativeLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/NavigationView"
+        app:headerLayout="@layout/header"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        app:itemTextColor="@color/gray"
+        app:itemIconTint="@color/gray"
+        app:menu="@menu/menu"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
 
 
     </androidx.drawerlayout.widget.DrawerLayout>

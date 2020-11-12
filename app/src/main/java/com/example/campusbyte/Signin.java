@@ -6,21 +6,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Signin extends AppCompatActivity
 {
+    EditText  EmailAddress, Password;
+    DatabaseHelper db;
     private Button SignIn;
-    private TextView forgotPassword, EmailAddress, Password;
+    private TextView forgotPassword;
     private TextView signup;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-        EmailAddress = (TextView) findViewById(R.id.EmailAddress) ;
-        Password = (TextView) findViewById(R.id.Password) ;
+        db = new DatabaseHelper(this);
+        EmailAddress = (EditText) findViewById(R.id.et_Email1) ;
+        Password = (EditText) findViewById(R.id.et_Password1) ;
 
         SignIn = (Button)findViewById(R.id.SignIn);
         SignIn.setOnClickListener(new View.OnClickListener()
@@ -28,18 +32,26 @@ public class Signin extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                if(EmailAddress.getText().toString().equals("admin")&& Password.getText().toString().equals("admin"))
+                 String email = EmailAddress.getText().toString();
+                String password = Password.getText().toString();
+                Boolean checkEmailPassword = db.checkEandP(email,password);
+
+                if(checkEmailPassword==true)
                 {
-                 openAdminAbout();
+                    if(EmailAddress.getText().toString().equals("admin")&& Password.getText().toString().equals("admin"))
+                                         {
+                                             Toast.makeText(getApplicationContext(),"Successful Signin as Admin",Toast.LENGTH_SHORT).show();
+                                             openAdminAbout();
+                                          }
+                                           else {
+                                            openHome();
+                                             }
                 }
-                else if(EmailAddress.getText().toString().equals("user")&& Password.getText().toString().equals("user"))
+                    else
                 {
-                    openHome();
+                    Toast.makeText(getApplicationContext(),"Wrong email or password",Toast.LENGTH_SHORT).show();
                 }
-               else
-                    {
-                        Toast.makeText(getApplicationContext(),"Not registered create an account",Toast.LENGTH_LONG).show();
-                    }
+
             }
         });
 
@@ -75,12 +87,7 @@ public class Signin extends AppCompatActivity
     {
         Intent intent = new Intent(this,AdminAbout.class);
         startActivity(intent);
-    }
-
-
-
-
-    //--------------Forgot Password PAge
+    }//--------------Forgot Password PAge
     public void openForgotPassword()
     {
         Intent intent = new Intent(this, ForgotPassword.class);
@@ -95,4 +102,4 @@ public class Signin extends AppCompatActivity
         startActivity(intent);
 
     }
-}
+                      }

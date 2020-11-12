@@ -27,7 +27,7 @@
             android:src="@drawable/campusbyte" />
 
         <EditText
-            android:id="@+id/et-Name"
+            android:id="@+id/et_Name"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -42,7 +42,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/et-Username"
+            android:id="@+id/et_Username"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -57,7 +57,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/et-Email"
+            android:id="@+id/t_Email"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -72,7 +72,7 @@
 
 
         <EditText
-            android:id="@+id/et-password"
+            android:id="@+id/et_Password"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -87,7 +87,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/et-repassword"
+            android:id="@+id/et_Repassword"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_gravity="center"
@@ -100,9 +100,8 @@
             android:textColorHint="@android:color/background_dark"
             android:textSize="14sp"
             android:autofillHints="" />
-
-
         <Button
+            android:id="@+id/et_Reg"
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -111,8 +110,5 @@
             android:text="@string/sign_up"
             android:textColor="#fff" />
 
-
     </LinearLayout>
-
-
 </LinearLayout>

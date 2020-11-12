@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/items1" android:title="ABOUT" android:icon="@drawable/about"/>
+    <item android:id="@+id/items2" android:title="NOTIFICATION" android:icon="@drawable/notification"/>
+    <item android:id="@+id/items3" android:title="ORDER" android:icon="@drawable/complete"/>
+    <item android:id="@+id/items4" android:title="ORDER HISTORY" android:icon="@drawable/history"/>
+    <item android:id="@+id/items5" android:title="SETTINGS" android:icon="@drawable/settings"/>
+    <item android:id="@+id/items6" android:title="LOGOUT" android:icon="@drawable/logout"/>
+</menu>
